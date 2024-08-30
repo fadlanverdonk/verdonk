@@ -17,9 +17,11 @@
             }
         ?>
         <div class="row mb-3">
-            <div class="col-md-2">
+            <div class="col-md-4">
             <div class="col-md-4">Nama Kategori</div>
-            <div class="col-md-8"><input type="text" class="form-control" name="kategori"></div>
+            <div class="col-md-8">
+                <input type="text" class="form-control" name="kategori"></div>
+        </div>
         </div>
         <div class="row">
             <div class="col-md-2"></div>

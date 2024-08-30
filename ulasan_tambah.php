@@ -1,4 +1,4 @@
-<h1 class="mt-4">Buku</h1>
+<h1 class="mt-4">Ulasan Buku</h1>
 <div class="card">
     <div class="card-body">
     <div class="row">
@@ -23,38 +23,38 @@
         ?>
         <div class="row mb-3">
             <div class="col-md-4">
-            <div class="col-md-4">Kategori</div>
-                 <select name="id_kategori" class="form-control">
+            <div class="col-md-4">Buku</div>
+                 <select name="id_buku" class="form-control">
                      <?php
-                         $kat = mysqli_query($koneksi, "SELECT*FROM kategori");
-                         while($kategori = mysqli_fetch_array($kat)) {
+                         $buk = mysqli_query($koneksi, "SELECT*FROM buku");
+                         while($buku = mysqli_fetch_array($buk)) {
                             ?>
-                            <option value="<?php echo $kategori['id_kategori']; ?>"><?php echo $kategori['kategori']; ?></option>
+                            <option value="<?php echo $buku['id_buku']; ?>"><?php echo $buku['judul']; ?></option>
                             <?php
                          }
                      ?>
                 </select>
              </div>
         </div>
-           <div class="row mb-3">
-            <div class="col-md-2">Judul</div>
-            <div class="col-md-8"><input type="text" class="form-control" name="judul"></div>
-        </div>
             <div class="row mb-3">
-            <div class="col-md-2">Penulis</div>
-            <div class="col-md-8"><input type="text" class="form-control" name="penulis"></div>
+            <div class="col-md-2">Ulasan</div>
+            <textarea name="ulasan" rows="5" class="form-control"></textarea>
         </div>
+     </div>
             <div class="row mb-3">
-            <div class="col-md-2">Penerbit</div>
-            <div class="col-md-8"><input type="text" class="form-control" name="penerbit"></div>
-        </div>
-            <div class="row mb-3">
-            <div class="col-md-2">Tahun Terbit</div>
-            <div class="col-md-8"><input type="number" class="form-control" name="tahun_terbit"></div>
-        </div>
-            <div class="row mb-3">
-            <div class="col-md-2">Deskripsi</div>
-            <textarea name="deskripsi" rows="5" class="form-control"></textarea>
+            <div class="col-md-2">Rating</div>
+            <select name="rating">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+         </select>
         </div>
      </div>
         <div class="row">
