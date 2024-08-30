@@ -24,7 +24,7 @@
                         <td><?php echo $data['rating']; ?></td>
                         <td>
                             <a href="?page=ulasan_ubah&&id=<?php echo $data['id_ulasan']; ?>" class="btn btn-info">ubah</a>
-                            <a onclick="return confirm('apakah anda yakin menghapus data ini?');" href="?page=ulasan_hapus$$id=<?php echo $data['id_ulasan']; ?>" class="btn-danger">Hapus</a>
+                            <a onclick="return confirm('apakah anda yakin menghapus data ini?');" href="?page=ulasan_hapus&&id=<?php echo $data['id_ulasan']; ?>" class="btn btn-danger">Hapus</a>
                         </td>
                     </tr>
                     <?php
