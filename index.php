@@ -72,9 +72,9 @@
                             <?php
                                 if($_SESSION ['user']['level'] !='peminjam'){
                             ?>
-                            <a class="nav-link" href="?page=laporan">
-                                <div class="sb-nav-link-icon"><i class="fas fa-comment"></i></div>
-                                Laporan
+                                <a class="nav-link" href="?page=laporan">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                                Laporan Peminjaman
                             </a>
                             <?php
                                 }
